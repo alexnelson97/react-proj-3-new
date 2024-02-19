@@ -1,0 +1,240 @@
+/* --------- This is CSS Reset Code --------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* --------- Begin your CSS Below here --------- */
+
+/* header styling */
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ce7128;
+}
+
+.logo,
+.nav-link {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.logo {
+  padding-left: 80px;
+}
+
+/* footer styling */
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(71, 71, 71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-svg {
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.footer-content {
+  text-align: center;
+  margin-left: 50px;
+  color: white;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+/* ad banner styling */
+.ad-banner {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.banner-content {
+  background-size: cover;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ce7128;
+  font-weight: 600;
+}
+
+.banner-content h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.blue-btn {
+  background-color: #507e7f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.blue-btn:hover {
+  background-color: #37595a;
+}
+
+/* Recipe Card Styling */
+.recipe-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 30px;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.recipe-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Search Bar Styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: 10px auto;
+  background-color: #f2dbc9;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.search-icon {
+  margin-right: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+}
