@@ -1,7 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "../../App.css";
 
-const RecipeCard = () => {
+const RecipeCard = ({ recipe }) => {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push(`/recipe/${recipe.recipe_id}`);
+  };
+
   return (
     <div className="recipe-card">
       <img
@@ -12,7 +19,9 @@ const RecipeCard = () => {
       <div className="recipe-details">
         <h3 className="recipe-name">Delicious ratatouille</h3>{" "}
         {/* Fake recipe name */}
-        <button className="blue-btn">See More</button>
+        <button className="blue-btn" onClick={handleClick}>
+          See More
+        </button>
       </div>
     </div>
   );

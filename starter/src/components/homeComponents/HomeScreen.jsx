@@ -3,6 +3,7 @@ import axios from "axios";
 import AdBanner from "./AdBanner";
 import RecipeCard from "./RecipeCard";
 import { BiSearchAlt2 } from "react-icons/bi";
+import "../../App.css";
 
 const HomeScreen = () => {
   const [recipes, setRecipes] = useState([]);

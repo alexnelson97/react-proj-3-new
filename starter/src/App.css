@@ -238,3 +238,46 @@ video {
   outline: none;
   background: transparent;
 }
+
+/* Detail Container Styling */
+.detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px; /* Reduce the space between instructions and ingredients to 30px */
+  padding: 0 100px;
+}
+
+/* Ingredients Styling */
+.ingredients-container {
+  background-color: white; /* Change background color to white */
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: calc(50% - 100px);
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight drop shadow */
+}
+
+.recipe-general-info {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Instructions Styling */
+.instructions-container {
+  background-color: white; /* Change background color to white */
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: calc(50% - 100px);
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight drop shadow */
+}
+
+.instructions {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
