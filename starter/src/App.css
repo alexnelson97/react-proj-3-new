@@ -243,20 +243,20 @@ video {
 .detail-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 30px; /* Reduce the space between instructions and ingredients to 30px */
+  justify-content: center;
+  gap: 70px;
   padding: 0 100px;
 }
 
 /* Ingredients Styling */
 .ingredients-container {
-  background-color: white; /* Change background color to white */
+  background-color: white;
   padding: 20px;
   margin-bottom: 30px;
   margin-top: 30px;
-  width: calc(50% - 100px);
+  width: calc(35% - 100px);
   max-width: 600px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight drop shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-general-info {
@@ -267,17 +267,97 @@ video {
 
 /* Instructions Styling */
 .instructions-container {
-  background-color: white; /* Change background color to white */
+  background-color: white;
   padding: 20px;
   margin-bottom: 30px;
   margin-top: 30px;
   width: calc(50% - 100px);
   max-width: 600px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight drop shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .instructions {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+/* new recipe screen Styling */
+.recipe-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.recipe-form {
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-button {
+  display: block;
+  width: 25%;
+  padding: 8px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ce7128;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ingredient-item {
+  margin: 5px 0;
+}
+
+.instructions-form {
+  width: 95%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.save-button {
+  display: block;
+  width: 25%;
+  padding: 8px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #507e7f;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.blue-btn:hover,
+.save-button:hover {
+  background-color: #37595a;
+}
+
+.form-title {
+  margin-top: 30px;
+  font-size: 34px;
+  font-weight: 400;
 }

@@ -23,7 +23,7 @@ const DetailScreen = () => {
 
   return (
     <section className="detail-screen">
-      <RecipeBanner />
+      {recipe && <RecipeBanner image={recipe.image} title={recipe.title} />}
       <div className="detail-container">
         <div className="ingredients-container">
           <Ingredients recipe={recipe} />

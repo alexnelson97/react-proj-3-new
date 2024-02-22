@@ -1,24 +1,24 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import "../../App.css";
+import { useNavigate } from "react-router-dom";
 
 const RecipeCard = ({ recipe }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    history.push(`/recipe/${recipe.recipe_id}`);
+    navigate(`/recipe/${recipe.recipe_id}`);
   };
 
   return (
     <div className="recipe-card">
       <img
         className="recipe-image"
-        src="https://tatyanaseverydayfood.com/wp-content/uploads/2018/08/Creamy-Smoky-Ratatouille-2-731x1024.jpg"
-        alt="Ratatouille"
+        src={recipe.image_url}
+        alt={recipe.recipe_name}
       />
       <div className="recipe-details">
-        <h3 className="recipe-name">Delicious ratatouille</h3>{" "}
-        {/* Fake recipe name */}
+        <h3 className="recipe-name">{recipe.recipe_name}</h3>
         <button className="blue-btn" onClick={handleClick}>
           See More
         </button>
